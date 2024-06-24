@@ -106,10 +106,11 @@
    
     .container{
         padding-top: 60px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 13%;
+        padding-right: 13%;
         line-height: 1.75;
         padding-bottom: 70px;
+        font-size: 18px;
     }
     
     #first {
@@ -335,6 +336,6 @@
         padding-top: 30px;
       }
 
-    #footer .a:link{
+    #footer a{
       color:#fff;
     }
