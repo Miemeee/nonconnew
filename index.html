@@ -11,6 +11,7 @@
 
   <!-- Favicons -->
   <link href="../rework/image/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Mitr:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- Template Main CSS File -->
@@ -27,7 +28,7 @@
           <img src=".//image/logore.png" style="width: 100px; padding-top: 20px;">
         </a>
         <ul>
-          <li><a href="#first">หน้าหลัก</a></li>
+          <li><a href="index.html">หน้าหลัก</a></li>
           <li><a href="#second">บริการ</a></li>
           <li><a href="#third">สินค้า</a></li>
           <li><a href="#portfolio">ผลงาน</a></li>
@@ -36,12 +37,6 @@
       </nav>
     </header>
 
-    <section id="first">
-      <div class="row">
-        <div class="col-wd-12 col-md-12 col-sm-12">
-          <img src="../rework/image/Carousels/2.jpg">
-      </div>
-    </section>
 
 
       <section id="second">
@@ -64,7 +59,7 @@
                   </div>
                   <br>
                   <div class="options">
-                    <button class="btn">คลิกดูเพิ่มเติม >></button>
+                    <button class="btn"><a href="../rework/service-mac.html">คลิกดูเพิ่มเติม >></a></button>
                   </div>
                 </div><br>
               </div>
@@ -131,14 +126,14 @@
         </div>
     <center>
       <div class="row">
-        <div class="col-wd-12 col-md-12 col-sm-12 menu-bar">
-          <ul>
-            <li>ทั้งหมด</li>
-            <li>Segment</li>
-            <li>Sheild</li>
-            <li>แอสฟัลท์</li>
-            <li>หิน</li>
-            <li>คอนกรีตสำเร็จรูป</li>
+        <div class="col-wd-12 col-md-12 col-sm-12">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">ทั้งหมด</li>
+            <li data-filter=".filter-app">Segment</li>
+            <li data-filter=".filter-card">Sheild</li>
+            <li data-filter=".filter-web">แอสฟัลท์</li>
+            <li data-filter=".filter-web1">หิน</li>
+            <li data-filter=".filter-web2">คอนกรีตสำเร็จรูป</li>
           </ul>
           <br><br><br><br>
         </div>
@@ -193,44 +188,42 @@
           <div class="col-wd-12 col-md-6 col-sm-4">
             <div class="box">
               <div class="box-image">
-                  <img src="../rework/image/Portfolios/7.jpg" alt="">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
               </div>
-
-            </div>
-          </div>
-          <div class="col-wd-12 col-md-6 col-sm-4">
-            <div class="box">
-              <div class="box-image">
-                  <img src="../rework/image/Portfolios/4.1.jpg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-wd-12 col-md-6 col-sm-4">
-            <div class="box">
-              <div class="box-image">
-                  <img src="../rework/image/Portfolios/4.2.jpg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-wd-12 col-md-6 col-sm-4">
-            <div class="box">
-              <div class="box-image">
-                  <img src="../rework/image/Portfolios/8.2.jpg" alt="">
+              <div class="studio-button">
+                  <div class="studio-button-icon"></div>
+                  <div class="studio-button-label">
+                    ดูเพิ่มเติม
+                  </div>
+              
               </div>
             </div>
           </div>
           <div class="col-wd-12 col-md-6 col-sm-4">
             <div class="box">
               <div class="box-image">
-                  <img src="../rework/image/Portfolios/8.1.jpg" alt="">               
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+              </div>
+              <div class="studio-button">
+                  <div class="studio-button-icon"></div>
+                  <div class="studio-button-label">
+                    ดูเพิ่มเติม
+                  </div>
+              
               </div>
             </div>
           </div>
           <div class="col-wd-12 col-md-6 col-sm-4">
             <div class="box">
               <div class="box-image">
-                  <img src="../rework/image/Portfolios/8.3.jpg" alt="">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+              </div>
+              <div class="studio-button">
+                  <div class="studio-button-icon"></div>
+                  <div class="studio-button-label">
+                    ดูเพิ่มเติม
+                  </div>
+              
               </div>
             </div>
           </div>
@@ -238,27 +231,78 @@
           <div class="col-wd-12 col-md-6 col-sm-4">
             <div class="box">
               <div class="box-image">
-                  <img src="../rework/image/Portfolios/9.1.jpg" alt="">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/5.2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Segment"><i class="bx bx-plus"></i></a>
+                  </div>
               </div>
             </div>
           </div>
           <div class="col-wd-12 col-md-6 col-sm-4">
             <div class="box">
               <div class="box-image">
-                  <img src="../rework/image/Portfolios/9.2.jpg" alt="">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/5.1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ผังโรงงานผลิต Segment"><i class="bx bx-plus"></i></a>
+                  </div>                 
               </div>
             </div>
           </div>
           <div class="col-wd-12 col-md-6 col-sm-4">
             <div class="box">
               <div class="box-image">
-                  <img src="../rework/image/Portfolios/9.jpg" alt="">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+                                <div class="portfolio-links">
+                <a href="assets/img/portfolio/5.3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Segment"><i class="bx bx-plus"></i></a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-wd-12 col-md-6 col-sm-4">
+            <div class="box">
+              <div class="box-image">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+              </div>
+              <div class="studio-button">
+                  <div class="studio-button-icon"></div>
+                  <div class="studio-button-label">
+                    ดูเพิ่มเติม
+                  </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-wd-12 col-md-6 col-sm-4">
+            <div class="box">
+              <div class="box-image">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+              </div>
+              <div class="studio-button">
+                  <div class="studio-button-icon"></div>
+                  <div class="studio-button-label">
+                    ดูเพิ่มเติม
+                  </div>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-wd-12 col-md-6 col-sm-4">
+            <div class="box">
+              <div class="box-image">
+                  <img src="../rework/image/Portfolios/5.1.jpg" alt="">
+              </div>
+              <div class="studio-button">
+                  <div class="studio-button-icon"></div>
+                  <div class="studio-button-label">
+                    ดูเพิ่มเติม
+                  </div>
+              
               </div>
             </div>
           </div>
 
         </div>
-        
 
       </section>
 
@@ -377,42 +421,54 @@
           </div>
 
         </div></center><br><br><br><br>
-        <div class="row">
-          <div class="col-wd-12 col-md-6 col-sm-6">
-           <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.9658893495107!2d100.55430217490783!3d13.841086095220438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29cedb136881d%3A0xad0a04cf246ce1e8!2z4Lia4Lih4LiILiDguIvguLXguKfguLTguKXguYDguK3guJnguIjguLXguYDguJnguLXguKLguKPguLTguIc!5e0!3m2!1sth!2sth!4v1694770966353!5m2!1sth!2sth" frameborder="0" allowfullscreen></iframe>
-            <span style="margin-left: 50px;">การติดต่อในช่องทางนี้ บริษัทอาจได้รับข้อมูลส่วนบุคคลของท่าน<br></span>
-            <span style="margin-left: 50px;">ขอให้ท่านศึกษานโยบายคุ้มครองข้อมูลส่วนบุคคลของบริษัท ก่อนจะให้</span>
-              ข้อมูลใดๆ แก่บริษัท
-              <div class="credits" style="margin-left: 50px;">
-                 <a href="inner-pdpa3.html"> - นโยบายคุ้มครองข้อมูลส่วนบุคคล การติดต่อทางช่องทางออนไลน์</a>
-              </div>
-            </div>  
-          </div>
-          <div class="col-wd-12 col-md-6 col-sm-6 form-cover">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form input-container">
-              <div class="row">
-                <div class="col-md-6 form-group mt-3 mt-md-0 form-style-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="ชื่อของท่าน" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0 form-style-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="อีเมลของท่าน" required>
-                </div>
-              </div>
-              <div class="form-group mt-3 form-style-6">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="เรื่อง" required>
-              </div>
-              <div class="form-group mt-3 form-style-6">
-                <textarea class="form-control" name="message" rows="5" placeholder="ข้อความ" required></textarea>
-              </div>
-
-              <div class="btn-lrg submit-btn"><button type="submit">ส่ง</button></div>
-            </form>
-            
-          </div>
-        </div><br><br>
       </section>
-    </body>
+    <!-- map-->
+      <section id="description">
+
+        <div class="float-parent-element">
+       
+         <div class="float-child-element">
+           <div class="des">
+            <div class="map">
+            <iframe style="width: 90%; height: 390px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.9658893495107!2d100.55430217490783!3d13.841086095220438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29cedb136881d%3A0xad0a04cf246ce1e8!2z4Lia4Lih4LiILiDguIvguLXguKfguLTguKXguYDguK3guJnguIjguLXguYDguJnguLXguKLguKPguLTguIc!5e0!3m2!1sth!2sth!4v1694770966353!5m2!1sth!2sth" frameborder="0" allowfullscreen></iframe></div>
+            <br>
+                <p style="padding-right: 10%;">การติดต่อในช่องทางนี้ บริษัทอาจได้รับข้อมูลส่วนบุคคลของท่าน ขอให้ท่านศึกษานโยบายคุ้มครองข้อมูลส่วนบุคคลของบริษัทก่อนจะให้ข้อมูลใดๆแก่บริษัท</p>
+                <a style="color: darkblue;" href="../rework/pdpa1.html"> นโยบายคุ้มครองข้อมูลส่วนบุคคล การติดต่อทางช่องทางออนไลน์</a>
+           </div>
+         </div>
+      
+       
+         <div class="float-child-element" style="box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.19); ">
+           <div class="contact" style="padding: 5%;">
+            <h2 style="text-align: center;">ติดต่อ</h2><br>
+            <input type="text" class="field" placeholder="ชื่อของท่าน">
+            <input type="text" class="field" placeholder="อีเมลของท่าน">
+            <br><input type="text" class="field" placeholder="เรื่อง">
+            <br><textarea class="field" placeholder="ข้อความ"></textarea>
+            <br><center><button class="btn" >ส่ง</button></center>
+           </div>
+         </div>
+       
+       
+        </div>
+       </section>
+
+       <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+    <div class="footer-top">
+        <div class="container">
+          <h1>CiviLService&Product</h1>
+        </div>
+       
+
+        <div class="credits-left">
+          <p style="text-align: left;" >© สงวนลิขสิทธิ์ การใช้เว็บไซต์นี้หมายความว่าคุณยอมรับ <span style="float: right;"><a href="../rework/pdpa1.html">นโยบายคุ้มครองข้อมูลส่วนบุคคล</a>
+    |      <a href="../rework/requirements.html">ข้อกำหนดและเงื่อนไข</a> | <a href="../rework/cookie.html" >นโยบายการใช้คุกกี้</a></span>
+    </div>
+
+</footer>
+<!-- End Footer -->
 
 </body>
 
