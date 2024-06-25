@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mitr", sans-serif;
 }
   body {
     min-height: 100vh;
@@ -31,12 +30,7 @@
     align-items: center;
     background-color: none;
     font-family: "Mitr", sans-serif;
-  }
-  
-  a{
-    color: darkblue;
-  }
-  
+      
   ul {
     display: flex;  
     box-sizing: border-box;
@@ -87,9 +81,9 @@
     touch-action: manipulation;
     border-radius: 5px;
   }
+  }
 
   section {
-
     display: grid;
     /* justify-content: center;
     align-items: center;
@@ -102,75 +96,10 @@
     background: #eff7ff;;
     text-align: center;
     color: white;
-  }
-  /* Banner */
-  .carousel-wrapper {
-    width: 100%;
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    position: cover;
-  }
+    /* Banner */
   
-  .slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: transform 300ms ease-out;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: inherit;
-  }
-  .overlay-text {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 50px; 
-    text-align: center;
-    z-index: 1;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    background: linear-gradient(0deg,  rgba(153, 151, 151, 0.163) 0%, rgba(33, 33, 33, 0.541) 35%, rgba(0, 0, 0, 0.873) 100%);
-    width: 100%;
-    height: 100%;
-    padding-top: 250px;
-  }
-  
-  .carousel-wrapper .btn {
-    height: 50px;
-    width: 50px;
-    font-size: 30px;
-    background: rgba(0, 0, 0, 0.284);
-    color: rgba(255, 255, 255, 0.359);
-    padding: 8px 10px;
-    border-radius: 50%;
-    border: none;
-    margin: 10px;
-    position: absolute;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: inline-block;
-    font-weight: bold;
-  }
-  .carousel-wrapper .btn:hover {
-    background: rgba(62, 62, 62, 0.497);
-  }
-  
-  .btn.previous {
-    top: 50%;
-    left: 0;
-  }
-  .btn.next {
-    top: 50%;
-    right: 0;
-  }
   /* End Banner */
+  }
   
   #second {
     background: #eff7ff;
@@ -183,7 +112,6 @@
       font-weight: 0;
       color: #333333;
     }
-
      /* Card */
     *{
       margin: 0;
@@ -215,6 +143,8 @@
     
     .card{
       width: 100%;
+      max-height: 700px;
+      min-height: 700px;
       height: auto;
       background: #fff;
       padding: 1.5rem;
@@ -271,7 +201,6 @@
       color: #22215B;
       cursor: pointer;
     }
-    
 
     
       /* End Card */
@@ -289,70 +218,47 @@
       font-weight: 0;
       color: #333333;
     }
-    /* Menu bar */
-    .menu-bar {
-      border-radius: 30px;
-      height: fit-content;
-      display: inline-flex;
-      background-color: rgba(166, 198, 217, 0.908);
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);  
-      align-items: center;
-      padding: 0 10px;
-      margin: 50px 0 0 0;
-      li {
-        list-style: none;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        padding: 12px 16px;
-        margin: 0 8px;
-        position: relative;
-        cursor: pointer;
-        white-space: nowrap;
-        &::before {
-          content: " ";
-          position: absolute;
-          top: 0;
-          left:0;
-          height:100%;
-          width: 100%;
-          z-index:-1;
-          transition: .2s;
-          border-radius: 25px;
-        }
-          &:hover {
-            &::before {
-              box-shadow: rgba(154, 154, 172, 0.2) 0px 7px 29px 0px;
-            }
-            color: rgb(34, 96, 162);
-        }
-      }
+    #filter-buttons button {
+      background-color: #FFFFFF;
+      border: 0;
+      border-radius: .5rem;
+      box-sizing: border-box;
+      color: #111827;
+      font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      font-size: .875rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+      padding: .75rem 1rem;
+      text-align: center;
+      text-decoration: none #D1D5DB solid;
+      text-decoration-thickness: auto;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
     }
-    /* End Menu bar */
-    /* Card */
-    .box {
-      display: grid;
-      position: relative;
-      margin: 30px;
+    #filter-buttons button:hover {
+      background-color: rgb(249,250,251);
     }
-    
-    .box-icon {
-      display: grid;
-      place-items: center;
+    #filter-buttons button.active {
+      outline: 2px solid transparent;
+    outline-offset: 2px;
     }
-
-    .box-image {
-      min-width: 300px;
-      min-height: 300px;
-      overflow: hidden;
-    
-      img {
-        width: 100%;
-        display: block;
-      }
+    #filterable-cards .card {
+      max-width: 400px;
+      max-height: 400px;
     }
-    /* End Card */
-  }
+    #filterable-cards .card.hide {
+      display: none;
+    }
+    img{
+      width: 400px;
+      height: 400px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+    }
+}
 
   #portfolio{
     background: #eff7ff;
@@ -378,6 +284,7 @@
     .container {
       padding-top: 20px;
     }
+    
 
   }
 
@@ -416,12 +323,14 @@
   a:hover {
     color: #6baecd;
   }
-
+  /* .map{
+    padding-left:50px;
+  } */
   iframe{
-
-    width: 100%;
-    height: 500px;
-    
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+    min-height: 400px;
   }
   /* contact form */
   .contact .info-item {
@@ -631,7 +540,134 @@
     width: 45%;
     height: 100%;
   }
+  
 }
+  /*description*/
+  #description .map{
+    padding-left:50px;
+    width: 100%;
+    height: 100%;
+  } 
+
+  #description{
+    background: #eff7ff;;
+    width: 100%; 
+    font-family: "Mitr", sans-serif;
+
+  }
+
+  #description .float-parent-element { 
+    width: 100%; 
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+
+} 
+#description .float-child-element { 
+    float: left; 
+    width: 50%; 
+    font-family: "Mitr", sans-serif;
+    line-height: 30px;
+    } 
+    
+#description .float-child-element .input{ 
+      font-family: "Mitr", sans-serif;
+      } 
+
+#description .float-child-element iframe{
+  width: 100%;
+  height: 100%;
+}
+
+#description .des { 
+   color: #333333;
+   font-size: 16.5px;
+
+} 
+
+#description .contact { 
+    background: white;
+   color: #333333;
+   font-size: 18.5px;
+}
+
+
+#description .field{
+  
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: .5rem 1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+
+#description .field:hover{
+ background-color: rgba(0, 0, 0, 0.1);
+}
+
+#description .btn{
+  
+  width: 20%;
+  padding: .5rem 1rem;
+  background: orange;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+ }
+
+ 
+#description .btn:hover{
+  background-color: #27ae60;
+ }
+ #description textarea{
+min-height: 150px;
+ }
+
+/* footer */
+
+#footer {
+  background: black;
+  padding: 0 0 20px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .container{
+  padding-left: 100px;
+  padding-top: 30px ;
+}
+
+
+#footer .footer-top .social-links a:hover {
+  background: #67b0d1;
+  color: #fff;
+  text-decoration: none;
+}
+
+  #footer .credits-left{
+      padding-top: 10px;
+      text-align: left;
+      font-size: 13px;
+      color: #fff;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 20px;
+  }
+
+  #footer .copyright {
+      border-top: 1px solid #385b6b;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+  #footer a{
+    color:#fff;
+  }
   
 
   /* Grid Responsive */
@@ -732,141 +768,5 @@
 	
 }
   
-  .des span{
-    padding-left: 100px;
-    padding-right: 100px;
-    color: black;
-    line-height: 15px;
-  }
-
   /* End Grid Responsive */
 
-
-  
-  --------------------------------------------------------------*/
-  /*description*/
-  #description .map{
-    padding-left:50px;
-    width: 100%;
-    height: 100%;
-  } 
-
-  #description{
-    width: 100%; 
-    font-family: "Mitr", sans-serif;
-
-  }
-
-  #description .float-parent-element { 
-    width: 100%; 
-    padding-top: 4%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 4%;
-
-} 
-#description .float-child-element { 
-    float: left; 
-    width: 50%; 
-    font-family: "Mitr", sans-serif;
-    line-height: 30px;
-    } 
-    
-#description .float-child-element .input{ 
-      font-family: "Mitr", sans-serif;
-      } 
-
-#description .float-child-element iframe{
-  width: 100%;
-  height: 100%;
-}
-
-#description .des { 
-   color: #333333;
-   font-size: 16.5px;
-
-} 
-
-#description .contact { 
- 
-   color: #333333;
-   font-size: 18.5px;
-}
-
-
-#description .field{
-  
-  width: 100%;
-  border: 2px solid rgba(0, 0, 0, 0);
-  outline: none;
-  background-color: rgba(230, 230, 230, 0.6);
-  padding: .5rem 1rem;
-  margin-bottom: 22px;
-  transition: .3s;
-}
-
-#description .field:hover{
- background-color: rgba(0, 0, 0, 0.1);
-}
-
-#description .btn{
-  
-  width: 20%;
-  padding: .5rem 1rem;
-  background: orange;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: .3s;
- }
-
- 
-#description .btn:hover{
-  background-color: #27ae60;
- }
- #description textarea{
-min-height: 150px;
- }
-
- 
-/* footer */
-
-#footer {
-  background: black;
-  padding: 0 0 20px 0;
-  color: #fff;
-  font-size: 14px;
-}
-
-#footer .container{
-  padding-left: 100px;
-  padding-top: 30px ;
-}
-
-
-#footer .footer-top .social-links a:hover {
-  background: #67b0d1;
-  color: #fff;
-  text-decoration: none;
-}
-
-  #footer .credits-left{
-      padding-top: 10px;
-      text-align: left;
-      font-size: 13px;
-      color: #fff;
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-bottom: 20px;
-  }
-
-  #footer .copyright {
-      border-top: 1px solid #385b6b;
-      text-align: center;
-      padding-top: 30px;
-    }
-
-  #footer a{
-    color:#fff;
-  }
