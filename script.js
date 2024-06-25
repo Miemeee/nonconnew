@@ -1,27 +1,22 @@
-const slides = document.querySelectorAll("[data-slide]");
-const buttons = document.querySelectorAll("[data-button]");
+const filterButtons = document.querySelectorAll("#filter-buttons button");
+const filterableCards = document.querySelectorAll("#filterable-cards .card");
+// Function to filter cards based on filter buttons
+const filterCards = (e) => {
+    document.querySelector("#filter-buttons .active").classList.remove("active");
+    e.target.classList.add("active");
+    filterableCards.forEach(card => {
+        // show the card if it matches the clicked filter or show all cards if "all" filter is clicked
+        if(card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+            return card.classList.replace("hide", "show");
+        }
+        card.classList.add("hide");
+    });
+}
+filterButtons.forEach(button => button.addEventListener("click", filterCards));
 
-let currSlide = 0;
-let maxSlide = slides.length - 1;
-
-const updateCarousel = (number = 0) => {
-  slides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${(index - number) * 100}%)`;
+$(function() {
+    $('a[href*=#]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
   });
-};
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.dataset.button == "next" ? ++currSlide : --currSlide;
-
-    if (currSlide > maxSlide) {
-      currSlide = 0;
-    } else if (currSlide < 0) {
-      currSlide = maxSlide;
-    }
-
-    updateCarousel(currSlide);
-  });
-});
-
-updateCarousel();
