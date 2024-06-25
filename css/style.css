@@ -11,7 +11,9 @@
     /* display: flex;
     align-items: center;
     justify-content: center; */
+    
   }
+  
   
   header {
     position: sticky;
@@ -19,7 +21,7 @@
     background: none;
     padding: 0.25rem 2rem;
     background: rgb(0,0,0);
-    z-index: 1;
+    z-index: 999;
   }
   
   nav {
@@ -30,6 +32,7 @@
     align-items: center;
     background-color: none;
     font-family: "Mitr", sans-serif;
+    z-index: 999;
       
   ul {
     display: flex;  
@@ -133,7 +136,6 @@
     z-index: 1;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    background: linear-gradient(0deg,  rgba(153, 151, 151, 0.163) 0%, rgba(33, 33, 33, 0.541) 35%, rgba(0, 0, 0, 0.873) 100%);
     width: 100%;
     height: 100%;
     padding-top: 250px;
@@ -146,6 +148,80 @@
     background-repeat: no-repeat;
     float: left;
   }
+
+ figcaption{
+    position: absolute;
+    top: 0%;
+    background: rgb(157,157,157);
+    background: linear-gradient(0deg, rgba(157,157,157,0.499124649859944) 0%, rgba(50,50,50,0.5019257703081232) 27%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+    z-index: 1;
+    h1{
+      font-size: 80px;
+    }
+    p{
+      font-size: 65px;
+    }
+    * {
+      box-sizing:border-box;
+      transition:all 0.3s;
+      -webkit-transition:all 0.3s;
+    }
+
+    body {
+      margin:100px;
+      background-color:#1d1f20;
+    }
+
+    .pos {
+      position:relative;
+      margin:0 auto;
+    }
+
+    .down-arrow {
+      height:60px;
+      width:60px;
+      border:4px solid #FFF;
+      border-radius:100%;
+    }
+
+    .down-arrow:before,.down-arrow:after {
+      content:'';position:absolute;
+      top:26px;width:18px;
+      border:2px solid #FFF;transition:all 0.3s;
+      -webkit-transition:all 0.3s;
+    }
+
+    .down-arrow:before {
+      transform:rotateZ(45deg);
+      -webkit-transform:rotateZ(45deg);
+      left:9px;
+    }
+    .down-arrow:after 
+    {
+      transform:rotateZ(-45deg);
+      -webkit-transform:rotateZ(-45deg);
+      left:22px;
+    }
+
+    .down-arrow:hover {
+      cursor:pointer;
+      border-width:0;
+    }
+    .down-arrow:hover:before,.down-arrow:hover:after 
+    {
+      top:40px;
+    }
+    .down-arrow:hover:before 
+    {
+      left:13px;
+    }
+    .down-arrow:hover:after 
+    {left:26px;
+    }
+    }
   
   /* End Banner */
   
@@ -292,20 +368,23 @@
     }
     #filter-buttons button.active {
       outline: 2px solid transparent;
-    outline-offset: 2px;
+      outline-offset: 2px;
     }
     #filterable-cards .card {
-      max-width: 400px;
-      max-height: 400px;
+      max-width: 500px;
+      max-height: 500px;
+      margin: 30px;
+      position: relative;
     }
     #filterable-cards .card.hide {
       display: none;
+      max-width: 500px;
+      max-height: 500px;
+      margin: 30px;
     }
     img{
-      width: 400px;
+      width: 100%;
       height: 400px;
-      padding-bottom: 20px;
-      padding-right: 20px;
     }
 }
 
@@ -321,13 +400,12 @@
       color: #4b4b4b;
     }
     .card { 
-      transition: 0.3s;
       margin: 30px;
-      /* แก้ respon อีกที */
-      width: 80%;
-      height: 300px;
+      max-width: 500px;
+      max-height: 500px;
       img{
         width: 100%;
+        height: 350px;
       }
     }
     .container {
@@ -591,59 +669,68 @@
   }
   
 }
-  /*description*/
-  #description .map{
-    padding-left:50px;
-    width: 100%;
-    height: 100%;
-  } 
-
-  #description{
-    background: #eff7ff;;
-    width: 100%; 
-    font-family: "Mitr", sans-serif;
-
+ /*description*/
+ #description{
+  background: #eff7ff;
+  @media screen and (min-width:960px){
+    padding-left: 10%;
+    padding-right: 10%;}
+  @media screen and (min-width:640px){
+    padding-left:10%;
+    padding-right: 10%;
   }
-
-  #description .float-parent-element { 
-    width: 100%; 
-    padding-top: 4%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 4%;
-
-} 
-#description .float-child-element { 
-    float: left; 
-    width: 50%; 
-    font-family: "Mitr", sans-serif;
-    line-height: 30px;
-    } 
-    
-#description .float-child-element .input{ 
-      font-family: "Mitr", sans-serif;
-      } 
-
-#description .float-child-element iframe{
+  @media screen and (min-width:320px){
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Mitr", sans-serif;
   width: 100%;
   height: 100%;
+  padding-bottom: 50px;
 }
 
-#description .des { 
-   color: #333333;
-   font-size: 16.5px;
 
-} 
+  #description .left iframe{
+    padding: 10px 10px;
+    width: 100%;
+    height: 440px;
+  }
 
+#description .right{
+  padding: 25px 40px;
+  background-color: white;
+}
+/*
+#description .container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}*/
+#description .contact-box{
+  max-width: 860px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.19);
+
+}
 #description .contact { 
-    background: white;
-   color: #333333;
-   font-size: 18.5px;
-}
 
+  color: #333333;
+  font-size: 18.5px;
+}
 
 #description .field{
-  
+
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0);
   outline: none;
@@ -657,25 +744,26 @@
  background-color: rgba(0, 0, 0, 0.1);
 }
 
-#description .btn{
-  
-  width: 20%;
-  padding: .5rem 1rem;
-  background: orange;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: .3s;
- }
 
- 
+#description .btn{
+
+width: 20%;
+padding: .5rem 1rem;
+background: orange;
+color: white;
+border: none;
+outline: none;
+cursor: pointer;
+transition: .3s;
+}
+
+
 #description .btn:hover{
-  background-color: #27ae60;
- }
- #description textarea{
+background-color: #27ae60;
+}
+#description textarea{
 min-height: 150px;
- }
+}
 
 /* footer */
 
@@ -788,6 +876,10 @@ min-height: 150px;
     .col-md-10 {width: 83.33333%;}
     .col-md-11 {width: 91.66667%;}
     .col-md-12 {width: 100%;}
+    section {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 
 }
 
@@ -805,6 +897,11 @@ min-height: 150px;
     .col-sm-10 {width: 83.33333%;}
     .col-sm-11 {width: 91.66667%;}
     .col-sm-12 {width: 100%;}
+    section {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    
 
 }
 @media screen and (max-width: 480px){
