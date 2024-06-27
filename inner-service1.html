@@ -32,7 +32,7 @@
               </ul>
             </nav>
           </header>
-          <section id="banner">
+          <section id="banner" style="padding: 0%;">
             <div class="row">
                 <div class="col-wd-12 col-md-12 col-sm-12 parentContainer">
                   <figure class="image">
@@ -42,14 +42,16 @@
                         พร้อมพนักงานขับมืออาชีพ อาทิ เช่น
                         
                         รถแบคโฮ รถขุด ขนาดเล็ก กลาง ใหญ่</p></figcaption>
-                  </figure>
+                  </figure><br>
               </div>
           </section>
+
           <section>
             <section id="second">
                 <div class="row">
                       <!-- Product Card -->
                       <div class="col-wd-12 col-md-6 col-sm-4">
+                        <div id="popup">
                         <div class="card">
                           <div class="card-img-holder">
                             <img src="../rework/image/InnerProduct1Card/bh.jpg" alt="Blog image">
@@ -61,13 +63,14 @@
                           </p>
   
                           <br><div class="interior">
-                            <a class="btn" href="#open-modal1">คลิกดูเพิ่มเติม >></a>
+                            <a class="btn" href="#open-modal1" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
                           </div>
                           <div class="container">
                           </div>
-                          <div id="open-modal1" class="modal-window">
+
+                          <div id="open-modal1" class="modal-window" style="display: none;">
                             <div style="width: 80%;">
-                              <a href="#second" title="Close" class="modal-close">Close</a>
+                              <a href="#" id="closePopup" onclick="closePopup(event)" title="Close" class="modal-close">Close</a>
                               <div class="col-wd-12 col-md-6 col-sm-3">
                                 <h2 id="popupTitle1" style="color: rgb(255, 145, 0);">ขนาด 3-7.5 ตัน</h2><br>
                                 <h3 id="popupTitle1">รถแบคโฮ ล้อแทร็ค</h3><br>
@@ -99,8 +102,10 @@
                             </div>
                           </div>
                           </div>
+                        </div>
                       </div>
                       <div class="col-wd-12 col-md-6 col-sm-4">
+                        <div id="popup">
                           <div class="card">
                               <div class="card-img-holder">
                                   <img src="../rework/image/InnerProduct1Card/bt.jpg" alt="Blog image">
@@ -112,13 +117,13 @@
                             </p>
   
                             <br><div class="interior">
-                                <a class="btn" href="#open-modal2">คลิกดูเพิ่มเติม >></a>
+                                <a class="btn" href="#open-modal2" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
                               </div>
                               <div class="container">
                               </div>
-                              <div id="open-modal2" class="modal-window">
+                              <div id="open-modal2" class="modal-window" style="display: none;">
                                 <div style="width: 65%;">
-                                  <a href="#second" title="Close" class="modal-close">Close</a>
+                                  <a id="closePopup" href="#" onclick="closePopup(event)" title="Close" class="modal-close">Close</a>
                                   <div class="col-wd-12 col-md-6 col-sm-6">
                                     <h2 id="popupTitle1">รถบรรทุก 10 ล้อดั้มพ์</h2><br>
                                     <div id="popupDescription1">- MITSUBISHI FN527<br>- MITSUBISHI FVZ<br>- HINO FM1AN1D</div><br><br>
@@ -131,9 +136,11 @@
                                   </div>
                                 </div>
                               </div>
-                          </div><br>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-wd-12 col-md-6 col-sm-4">
+                        <div id="popup">
                           <div class="card">
                               <div class="card-img-holder">
                                 <img src="../rework/image/InnerProduct1Card/gd.jpg" alt="Blog image">
@@ -144,13 +151,13 @@
                               </p><br>
                               
                               <br><div class="interior">
-                                <a class="btn" href="#open-modal3">คลิกดูเพิ่มเติม >></a>
+                                <a class="btn" href="#open-modal3" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
                               </div>
                               <div class="container">
                               </div>
-                              <div id="open-modal3" class="modal-window" >
+                              <div id="open-modal3" class="modal-window" style="display: none;">
                                 <div style="width: 40%;">
-                                  <a href="#second" title="Close" class="modal-close">Close</a>
+                                  <a id="closePopup" href="#" onclick="closePopup(event)" title="Close" class="modal-close">Close</a>
                                   <div class="col-wd-12 col-md-12 col-sm-12">
                                     <h2 id="popupTitle1">รถเกรดเดอร์</h2><br>
                                     <div id="popupDescription1">- CATERPILLAR 140G<br>- CATERPILLAR 140G(VHP)<br>- CATERPILLAR 140H</div><br>
@@ -158,9 +165,11 @@
                                     </div>
                                 </div>
                               </div>
-                          </div><br>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-wd-12 col-md-6 col-sm-4">
+                        <div id="popup">
                         <div class="card">
                           <div class="card-img-holder">
                             <img src="../rework/image/InnerProduct1Card/kann.png" alt="Blog image">
@@ -172,39 +181,41 @@
                           
                           <br>
                           <div class="interior">
-                            <a class="btn" href="#open-modal4">คลิกดูเพิ่มเติม >></a>
+                            <a class="btn" href="#open-modal4" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
                           </div>
                           <div class="container">
                           </div>
-                          <div id="open-modal4" class="modal-window">
+                          <div id="open-modal4" class="modal-window" style="display: none;">
                             <div style="width: 40%;">
-                              <a href="#second" title="Close" class="modal-close">Close</a>
+                              <a id="closePopup" href="#" title="Close" onclick="closePopup(event)" class="modal-close">Close</a>
                               <h2 id="popupTitle1">ขนาด 4 ล้อ</h2><br>
                                   <div id="popupDescription1">- ISUZU KATO KR202 (20 T)<br>- LIEBHERR LTL1025 (25 T)<br>- TANADO TR350-1 (35 T)<br>- ZOOMLION RT60 (60T)<br>- ZOOMLION ZRT850D (85T)</div><br>
                                   <img id="popupImage" src="../rework/image/InnerProduct1Card/popup/รถเครน1.jpg" alt="Popup Image" style="width: 100%;">
                             </div>
                           </div>
-                        </div><br>
+                        </div>
+                        </div>
                       </div>
                       <div class="col-wd-12 col-md-6 col-sm-4">
+                        <div id="popup">
                           <div class="card">
                             <div class="card-img-holder">
                               <img src="../rework/image/InnerProduct1Card/bot.jpg" alt="Blog image">
                             </div>
                             <h3 class="blog-title">รถบดทุกประเภท</h3>
-                            <p class="description" style="padding-bottom: 30px;">
+                            <p class="description" style="padding-bottom: 30px; padding-left: 30px; padding-right: 35px;">
                               ล้อยาง 9 ล้อ "รถสั่นสะเทือนล้อเรียบ-เปลือกหนาม ขนาด เล็ก-ใหญ่"
                             </p>
-                            
-                            <br>
+                         
                             <div class="interior">
-                                <a class="btn" href="#open-modal6">คลิกดูเพิ่มเติม >></a>
+                                <a class="btn" href="#open-modal6" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
                               </div>
+
                               <div class="container">
                               </div>
-                              <div id="open-modal6" class="modal-window">
+                              <div id="open-modal6" class="modal-window" style="display: none;">
                                 <div style="width: 65%;">
-                                  <a href="#second" title="Close" class="modal-close">Close</a>
+                                  <a id="closePopup" href="#" onclick="closePopup(event)" title="Close" class="modal-close">Close</a>
                                   <div class="col-wd-12 col-md-6 col-sm-6">
                                     <h2 id="popupTitle1">ประเภท ล้อเรียบ - เปลือกหนาม</h2><br>
                                     <div id="popupDescription1">- HAMM - 3410P<br>- Dynapac - CA30D<br>- SAKAI - SV520 DF<br>- INGERSOLL RAND - SD100D</div><br>
@@ -221,9 +232,11 @@
                                   </div>
                                 </div>
                               </div>
-                          </div><br>
+                          </div>
+                          </div>
                       </div>
                       <div class="col-wd-12 col-md-6 col-sm-4">
+                        <div id="popup">
                               <div class="card">
                                 <div class="card-img-holder" >
                                   <img src="../rework/image/InnerProduct1Card/k.jpg" alt="Blog image">
@@ -234,13 +247,13 @@
                                 </p><br>
                                 
                                 <div class="interior">
-                                    <a class="btn" href="#open-modal7">คลิกดูเพิ่มเติม >></a>
+                                    <a class="btn" href="#open-modal7" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
                                   </div>
                                   <div class="container">
                                   </div>
-                                  <div id="open-modal7" class="modal-window" >
+                                  <div id="open-modal7" class="modal-window" style="display: none;">
                                     <div style="width: 40%;">
-                                      <a href="#second" title="Close" class="modal-close">Close</a>
+                                      <a id="closePopup" href="#" title="Close"onclick="closePopup(event)" class="modal-close">Close</a>
                                       <div class="col-wd-12 col-md-12 col-sm-12">
                                         <h2 id="popupTitle1">ขนาด 20m</h2><br>
                                         <div id="popupDescription1">- GenieZBoom - Z60/34</div><br>
@@ -250,37 +263,41 @@
                                         </div>
                                     </div>
                                   </div>
-                              </div><br>
+                              </div>
+                          </div>
                        </div>
                        <div class="col-wd-12 col-md-6 col-sm-4">
-                        <div class="card">
-                          <div class="card-img-holder">
-                            <img src="../rework/image/InnerProduct1Card/แทร็กเตอร์.png" alt="Blog image">
-                          </div>
-                          <h3 class="blog-title">รถแทรกเตอร์</h3>
-                          <p class="description" style="padding-bottom: 30px;">
-                            CATERPILLAR
-                          </p>
-                          
-                          <br>
-                          <div class="interior">
-                            <a class="btn" href="#open-modal8">คลิกดูเพิ่มเติม >></a>
-                          </div>
-                          <div class="container">
-                          </div>
-                          <div id="open-modal8" class="modal-window" >
-                            <div style="width: 40%;">
-                              <a href="#second" title="Close" class="modal-close">Close</a>
-                              <div class="col-wd-12 col-md-12 col-sm-12">
-                                <h2 id="popupTitle1">รถแทรกเตอร์</h2><br>
-                                <div id="popupDescription1">- KOMATSU - D65A<br>- CATERPILLAR - D4H<br>- CATERPILLAR - D4H - ตีนเป็ด<br>- CATERPILLAR - D4H - LGP<br>- CATERPILLAR - D4H - XL<br>- CATERPILLAR - D5H - PS<br>- CATERPILLAR - D5H - XL<br>- CATERPILLAR - D5H - LGP - ตีนเป็ด<br>- CATERPILLAR - D6C<br>- CATERPILLAR - D6D<br>- CATERPILLAR - D6H<br>- CATERPILLAR - D7G</div><br>
-                                <center><img id="popupImage" src="../rework/image/InnerProduct1Card/popup/แทร็กเตอร์.png" alt="Popup Image" style="width: 90%;"></center>
-                                </div>
+                        <div id="popup">
+                          <div class="card">
+                            <div class="card-img-holder">
+                              <img src="../rework/image/InnerProduct1Card/แทร็กเตอร์.png" alt="Blog image">
+                            </div>
+                            <h3 class="blog-title">รถแทรกเตอร์</h3>
+                            <p class="description" style="padding-bottom: 30px;">
+                              CATERPILLAR
+                            </p>
+                            
+                            <br>
+                            <div class="interior">
+                              <a class="btn" href="#open-modal8" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
+                            </div>
+                            <div class="container">
+                            </div>
+                            <div id="open-modal8" class="modal-window" style="display: none;">
+                              <div style="width: 40%;">
+                                <a id="closePopup" href="#" onclick="closePopup(event)" title="Close" class="modal-close">Close</a>
+                                <div class="col-wd-12 col-md-12 col-sm-12">
+                                  <h2 id="popupTitle1">รถแทรกเตอร์</h2><br>
+                                  <div id="popupDescription1">- KOMATSU - D65A<br>- CATERPILLAR - D4H<br>- CATERPILLAR - D4H - ตีนเป็ด<br>- CATERPILLAR - D4H - LGP<br>- CATERPILLAR - D4H - XL<br>- CATERPILLAR - D5H - PS<br>- CATERPILLAR - D5H - XL<br>- CATERPILLAR - D5H - LGP - ตีนเป็ด<br>- CATERPILLAR - D6C<br>- CATERPILLAR - D6D<br>- CATERPILLAR - D6H<br>- CATERPILLAR - D7G</div><br>
+                                  <center><img id="popupImage" src="../rework/image/InnerProduct1Card/popup/แทร็กเตอร์.png" alt="Popup Image" style="width: 90%;"></center>
+                                  </div>
+                              </div>
                             </div>
                           </div>
-                        </div><br>
+                        </div>
                         </div>
                         <div class="col-wd-12 col-md-6 col-sm-4">
+                          <div id="popup">
                             <div class="card">
                               <div class="card-img-holder">
                                 <img src="../rework/image/InnerProduct1Card/kb.jpg" alt="Blog image">
@@ -292,13 +309,13 @@
                               
                               <br><br>
                               <div class="interior">
-                                <a class="btn" href="#open-modal9">คลิกดูเพิ่มเติม >></a>
+                                <a  class="btn" href="#open-modal9" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
                               </div>
                               <div class="container">
                               </div>
-                              <div id="open-modal9" class="modal-window">
+                              <div id="open-modal9" class="modal-window" style="display: none;">
                                 <div style="width: 65%;">
-                                  <a href="#second" title="Close" class="modal-close">Close</a>
+                                  <a id="closePopup" href="#" onclick="closePopup(event)" title="Close" class="modal-close">Close</a>
                                   <div class="col-wd-12 col-md-6 col-sm-6">
                                     <h2 id="popupTitle1">ตอนครึ่ง</h2><br>
                                     <div id="popupDescription1">- ISUZU - D-MAX M/T<br>- TOYOTA - REVO 2.4E M/T<br>- TOYOTA - REVO 4x2 2.4E M/T<br>- TOYOTA - REVO2.4J PLUS M/T<br>- TOYOTA - VIGO 4WD 3.0G M/T<br>- MITSUBISHI - TRITON MCAB2.5G M/T</div><br><br>
@@ -311,37 +328,61 @@
                                   </div>
                                 </div>
                               </div>
-                            </div><br>
-                        </div>
-                        <div class="col-wd-12 col-md-6 col-sm-4">
-                        <div class="card">
-                          <div class="card-img-holder">
-                            <img src="../rework/image/InnerProduct1Card/w.jpg" alt="Blog image">
-                          </div>
-                          <h3 class="blog-title">รถน้ำ</h3>
-                          <p class="description" style="padding-bottom: 30px;">
-                         
-                          </p>
-                          
-                          <br><br>
-                          <div class="interior">
-                            <a class="btn" href="#open-modal10">คลิกดูเพิ่มเติม >></a>
-                          </div>
-                          <div class="container">
-                          </div>
-                          <div id="open-modal10" class="modal-window" >
-                            <div style="width: 40%;">
-                              <a href="#second" title="Close" class="modal-close">Close</a>
-                              <div class="col-wd-12 col-md-12 col-sm-12">
-                                <h2 id="popupTitle1">รถบรรทุกน้ำ</h2><br>
-                                <div id="popupDescription1">- HINO - FL&INKA<br>- HINO - FL1AN1A-SHT<br>- MITSUBISHI - FN527<br>- MITSUBISHI - FN527+RC<br>- MITSUBISHI -FN528</div><br>
-                                <center><img id="popupImage" src="../rework/image/InnerProduct1Card/popup/warter.png" alt="Popup Image" style="width: 90%;"></center>
-                                </div>
                             </div>
                           </div>
-                        </div><br>
+                        </div>
+                        <div class="col-wd-12 col-md-6 col-sm-4">
+                          <div id="popup">
+                            <div class="card">
+                              <div class="card-img-holder">
+                                <img src="../rework/image/InnerProduct1Card/w.jpg" alt="Blog image">
+                              </div>
+                              <h3 class="blog-title">รถน้ำ</h3>
+                              <p class="description" style="padding-bottom: 30px;">
+                            
+                              </p>
+                              
+                              <br><br>
+                              <div class="interior">
+                                <a class="btn" href="#open-modal10" onclick="openPopup()"><h3>คลิกดูเพิ่มเติม >></h3></a>
+                              </div>
+                              <div class="container">
+                              </div>
+                              <div id="open-modal10" class="modal-window" style="display: none;">
+                                <div style="width: 40%;">
+                                  <a id="closePopup" href="#" onclick="closePopup(event)" title="Close" class="modal-close">Close</a>
+                                  <div class="col-wd-12 col-md-12 col-sm-12">
+                                    <h2 id="popupTitle1">รถบรรทุกน้ำ</h2><br>
+                                    <div id="popupDescription1">- HINO - FL&INKA<br>- HINO - FL1AN1A-SHT<br>- MITSUBISHI - FN527<br>- MITSUBISHI - FN527+RC<br>- MITSUBISHI -FN528</div><br>
+                                    <center><img id="popupImage" src="../rework/image/InnerProduct1Card/popup/warter.png" alt="Popup Image" style="width: 90%;"></center>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
                         </div>
                 </div>
+                
           </section>
+
+           
+            <!-- ======= Footer ======= -->
+            <footer id="footer" style="padding: 0%;">
+           
+               <div class="footer-top" >
+                   <div class="container">
+                     <h1>CiviLService&Product</h1>
+                   </div>
+                  
+           
+                   <div class="credits-left">
+                     <p style="text-align: left;" >© สงวนลิขสิทธิ์ การใช้เว็บไซต์นี้หมายความว่าคุณยอมรับ <span style="float: right;"> <a href="../rework/pdpa1.html">นโยบายคุ้มครองข้อมูลส่วนบุคคล</a>
+               |      <a href="../rework/requirements.html">ข้อกำหนดและเงื่อนไข</a> | <a href="../rework/cookie.html" >นโยบายการใช้คุกกี้</a></span>
+                 </div>
+               </div>
+           
+           </footer>
+           <!-- End Footer -->
+           
       </body>
 </html>
