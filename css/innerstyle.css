@@ -125,6 +125,7 @@
         }
 }
 #second{
+  
   padding-left:5%;
   padding-right: 5%;
     background: white;
@@ -148,8 +149,8 @@
     *{
       margin: 0;
       border: 0;
-      padding-left:20px ;
-      padding-right:20px;
+      /* padding-left:20px ;
+      padding-right:20px; */
       outline: 0;
     }
     
@@ -176,44 +177,54 @@
     .card{
       width: 100%;
       background: #fff;
-      padding: 1.5rem;
       overflow: hidden;
-      position: relative;
-      margin: 10px;
+      margin: 20px;
       border-radius: 10px;
+      position: relative;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      @media screen and (min-width:320px){height: 450px;}
-      @media screen and (min-width:640px){height: 400px;}
-      @media screen and (min-width:960px){height: 530px;}
+      @media screen and (min-width:320px){height: auto; max-height: 500px; width:auto; max-width: 400px;}
+      @media screen and (min-width:640px){height: auto; max-height: 480px; width:auto; max-width: 350px;}
+      @media screen and (min-width:960px){height: auto; max-height: 550px; width:auto; max-width:450px;}
+      
+    }
+    .card :hover{
+
     }
 
+   
     h3{
+      padding-bottom: 5%px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #67b0d1;
+    }
+    h2{
       padding-bottom: 5%px;
       font-size: 20px;
       font-weight: 600;
       padding-left: 5.5%;
       color: #67b0d1;
-
-
-  }
+    }
     
     .card-img-holder{
-      width: 100%;
+      width: auto;
       height: auto;
+      padding: 0;
       position: relative;
     }
     
     .card-img-holder img{
-      width: 100%;
-      height: auto;
-      object-fit: cover;
+      padding: 0;
+      max-width: 100%;
+      max-height: 100%;
+    
     }
     
     .blog-title{
       color: #22215B;
       padding-left:9% ;
       padding-right:9%;
-      padding-top: 1%;
+      padding-top: 5%;
       font-size: 1.5rem;
     }
     
@@ -221,19 +232,14 @@
       padding: 1rem 0;
       color: #22215B80;
       font-size: 1rem;
+ 
     }
 
-    .options{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1rem;
+    .interior{
+      padding-left: 10%;
     }
-    
-    .options span{
-      font-weight: 600;
-      color: #22215B;
-    }
+
+
     
     .btn{
       font-size: 1rem;
@@ -279,6 +285,10 @@
           font-size: 150%;
           margin: 0 0 15px;
         }
+        img{
+          padding-right: 10%;
+        }
+        
       }
       
       .modal-close {
@@ -295,7 +305,27 @@
           color: black;
         }
       }
-     
+
+
+      .download-btn {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        background-color: #94a7bb;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .download-btn:hover {
+        background-color: #c1dcfa;
+      }
+
       
       .container {
         display: grid;
@@ -325,7 +355,9 @@
         i {
           padding-right: 0.3em;
         } 
-}}
+
+      }
+    }
 
 
 /* footer */
@@ -335,11 +367,13 @@
     padding: 0 0 20px 0;
     color: #fff;
     font-size: 14px;
+    font-family:  "Raleway", sans-serif;
   }
 
   #footer .container{
     padding-left: 170px;
     padding-top: 30px ;
+    font-family:  "Raleway", sans-serif;
   }
   
   
@@ -441,7 +475,10 @@
     .col-md-10 {width: 83.33333%;}
     .col-md-11 {width: 91.66667%;}
     .col-md-12 {width: 100%;}
-   
+    #second {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 
 }
 
@@ -459,6 +496,10 @@
     .col-sm-10 {width: 83.33333%;}
     .col-sm-11 {width: 91.66667%;}
     .col-sm-12 {width: 100%;}
+    #second {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
 
 
 }
