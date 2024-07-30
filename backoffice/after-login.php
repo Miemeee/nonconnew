@@ -77,11 +77,12 @@ $conn->close();
                 <h2><?php echo $user['firstname'] . ' ' . $user['lastname']; ?></h2>
             </div><br>
             <ul>
-                <li><a href="after-login.php">หน้าหลัก</a></li>
-                <li><a href="adddelete.php">เพิ่ม/ลบสินค้าและบริการ</a></li>
-                <li><a href="machine.php">เพิ่ม/ลบเครื่องจักร</a></li>
-                <li><a href="regis.php">ลงทะเบียนผู้ใช้</a></li>
-                <li><a href="logout.php">ออกจากระบบ</a></li>
+                <li><a href="after-login.php">Home</a></li>
+                <li><a href="adddelete.php">Product</a></li>
+                <li><a href="testmac.php">Postmachine</a></li>
+                <li><a href="port.php">Postportfolio</a></li>
+                <li><a href="regis.php">Register</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
         <main>

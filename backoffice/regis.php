@@ -155,17 +155,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div><br>
             <nav class="menu">
                 <ul>
-                    <li><a href="after-login.php">หน้าหลัก</a></li>
-                    <li><a href="adddelete.php">เพิ่ม/ลบสินค้าและบริการ</a></li>
-                    <li><a href="machine.php">เพิ่ม/ลบเครื่องจักร</a></li>
-                    <li><a href="regis.php">ลงทะเบียนผู้ใช้</a></li>
-                    <li><a href="logout.php">ออกจากระบบ</a></li>
+                    <li><a href="after-login.php">Home</a></li>
+                    <li><a href="adddelete.php">Product</a></li>
+                    <li><a href="testmac.php">Postmachine</a></li>
+                    <li><a href="port.php">Postportfolio</a></li>
+                    <li><a href="regis.php">Register</a></li>
+                    <li><a href="logout.php">Logout</a></li>
                 </ul>
             </nav>
         </aside>
         <main style="padding-left:12%;">
             <div class="head">
-                <p style="padding-left:10%;">ลงทะเบียนผู้ใช้</p>
+                <p style="padding-left:10%;">Registration</p>
             </div>
             <br><br><br><br><br><br><br><br>
             <div class="col-wd-2 col-md-2 col-sm-2 blank"></div>
@@ -173,25 +174,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="formcover">
                     <form action="#" method="post" class="registration-form">
                         <div class="form-group">
-                            <label for="firstname">ชื่อจริง</label>
+                            <label for="firstname">Firstname</label>
                             <input type="text" id="firstname" name="firstname" required>
                         </div>
                         <div class="form-group">
-                            <label for="lastname">นามสกุล</label>
+                            <label for="lastname">Lastname</label>
                             <input type="text" id="lastname" name="lastname" required>
                         </div>
                         <div class="form-group">
-                            <label for="username">ชื่อผู้ใช้</label>
+                            <label for="username">Username</label>
                             <input type="text" id="username" name="username" required>
                         </div>
                         <div class="form-group">
-                            <label for="password">รหัสผ่าน</label>
+                            <label for="password">Password</label>
                             <input type="password" id="password" name="password" required>
                             <div class="error-message">
                                 รหัสผ่านของท่านต้องประกอบด้วยพิมพ์เล็กและตัวพิมพ์ใหญ่ และ มีความยาวมากกว่า 8 ตัวอักษร
                             </div>
                         </div><br>
-                        <button type="submit" class="submit-btn">ลงทะเบียน</button>
+                        <button type="submit" class="submit-btn">Register</button>
                     </form>
                 </div>
             </div>
